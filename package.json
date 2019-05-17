@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "REST API to resize images",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "$(npm bin)/cypress run",
     "tsc": "tsc",
     "clean": "rm -rf build node_modules",
     "start": "npm run tsc && node ./build/Server.js",
@@ -22,6 +22,7 @@
     "typescript": "^3.4.5"
   },
   "devDependencies": {
+    "cypress": "^3.2.0",
     "nodemon": "^1.19.0"
   }
 }
