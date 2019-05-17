@@ -1,0 +1,39 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Image resize",
+        "description": "Image resize REST API",
+        "license": {
+            "name": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+        }
+    },
+    "host": "localhost",
+    "basePath": "/",
+    "schemes": [
+        "http"
+    ],
+    "produces": [
+        "application/json",
+        "image/jpg"
+    ],
+    "paths": {
+        "/images": {
+            "get": {
+                "tags": [
+                    "Images"
+                ],
+                "summary": "Get or resize images",
+                "responses": {
+                    "200": {
+                        "description": "display image"
+                    },
+                    "404": {
+                        "description": "Image not found"
+                    }
+                }
+            }
+        }
+    }
+}
