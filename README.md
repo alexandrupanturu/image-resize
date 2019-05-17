@@ -35,7 +35,7 @@ docker-compose up -d
 This will start the node application service and also the varnish service.
 Varnish has a simple vcl configuration that will store each request by the url. So duplicated requests will be served by the varnish and the request will no longer hit the backend ( node app)
 
-## Info ###
+## Infomations ###
 
 http://localhost/images/img1.jpg - will show the original image
 
@@ -51,4 +51,13 @@ Folder where the images can be uploaded is ./images
 
 Node application also has the swagger-stats library and this will provide statistics for the service. 
 UI available at http://localhost/swagger-stats/ui
+
+## Commands ##
+
+````
+npm start # starts the node js server
+npm run clean # cleans up node modules
+npm run test # starts cypress tests
+npm run dev # starts locally with nodemon
+````
 
